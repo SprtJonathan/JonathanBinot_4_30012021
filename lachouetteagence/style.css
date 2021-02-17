@@ -25,6 +25,11 @@ a:hover {
     cursor: pointer;
 }
 
+a:focus {
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
 #page-loading-blocs-notifaction {
     position: fixed;
     top: 0;
@@ -945,7 +950,7 @@ h4 {
         padding-left: 15px;
         width: 100%;
     }
-    .nav > li:hover {
+    .nav > li:focus {
         background: rgba(0, 0, 0, .08);
     }
     .dropdown .dropdown a .caret {
