@@ -756,6 +756,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.black {
+    color: #111!important;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -802,7 +806,27 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.btn-atomic-tangerine-black {
+    background: #F3976C;
+    color: #111!important;
+}
+
 .btn-atomic-tangerine:hover {
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine:focus {
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine-black:hover {
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine-black:focus {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
