@@ -26,8 +26,7 @@ a:hover {
 }
 
 a:focus {
-    border: 1px solid black;
-    border-radius: 15px;
+    border: 1px dotted black;
 }
 
 #page-loading-blocs-notifaction {
@@ -774,10 +773,9 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(105, 87, 39, 0.7);
+    background-color: rgba(34, 34, 34, 0.7);
     /*background-color: rgba(165, 147, 99, 0.7);*/
     padding: 40px 40px 40px 40px;
-    border-radius: 25px;
 }
 
 .bold-link {
@@ -811,22 +809,12 @@ h4 {
     color: #111!important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
 
-.btn-atomic-tangerine:focus {
-    background: #c27956!important;
-    color: #FFFFFF!important;
-}
-
-.btn-atomic-tangerine-black:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
-}
-
-.btn-atomic-tangerine-black:focus {
+.btn-atomic-tangerine-black:hover, .btn-atomic-tangerine-black:focus {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
