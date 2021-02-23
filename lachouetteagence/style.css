@@ -26,7 +26,7 @@ a:hover {
 }
 
 a:focus {
-    border: 3px dotted black;
+    border: 1px dashed black;
 }
 
 #page-loading-blocs-notifaction {
@@ -585,7 +585,7 @@ a[data-lightbox]:hover img {
 #lightbox-modal .modal-dialog img {
     max-height: 90vh;
     margin: 0 auto;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
 }
 
 .lightbox-caption {
@@ -605,7 +605,7 @@ a[data-lightbox]:hover img {
     top: 20px;
     right: 20px;
     z-index: 20;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .7);
     border: none;
     line-height: 30px;
     padding: 0 9px 5px;
@@ -623,7 +623,7 @@ a[data-lightbox]:hover img {
 .prev-lightbox {
     font-size: 20px;
     color: rgba(255, 255, 255, .9);
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .7);
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
@@ -668,7 +668,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important; /*€575757*/
+    color: #575757!important;
 }
 
 .container {
