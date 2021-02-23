@@ -26,7 +26,7 @@ a:hover {
 }
 
 a:focus {
-    border: 1px dotted black;
+    border: 3px dotted black;
 }
 
 #page-loading-blocs-notifaction {
@@ -585,6 +585,7 @@ a[data-lightbox]:hover img {
 #lightbox-modal .modal-dialog img {
     max-height: 90vh;
     margin: 0 auto;
+    padding-bottom: 25px;
 }
 
 .lightbox-caption {
@@ -693,7 +694,7 @@ a {
 }
 
 p {
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
