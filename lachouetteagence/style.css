@@ -267,10 +267,6 @@ a:focus {
     color: rgba(0, 0, 0, .6);
 }
 
-.l-bloc .navbar-toggle .icon-bar:focus {
-    color: rgba(0, 0, 0, .6);
-}
-
 .d-bloc .panel .btn-wire,
 .d-bloc .panel .btn-wire:hover,
 .l-bloc .btn-wire,
@@ -357,8 +353,9 @@ a:focus {
     border: 0px;
 }
 
-.navbar-toggle:hover {
-    background: transparent!important;
+button:focus {
+    border: 1px dashed;
+    background-color: rgba(0, 0, 0, .08);
 }
 
 .navbar-toggle .icon-bar {
