@@ -1,7 +1,14 @@
+html
+{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     padding: 0;
     background: #FFF;
+    width: 100vw;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -16,6 +23,10 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+}
+
+a:focus {
+    border: 1px dashed black;
 }
 
 #page-loading-blocs-notifaction {
@@ -91,7 +102,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -334,7 +345,7 @@ a:hover {
 
 .nav > li a:hover,
 .nav > li a:focus {
-    background: transparent;
+    background: rgba(255, 188, 150, 0.9);
 }
 
 .navbar-toggle {
@@ -342,8 +353,9 @@ a:hover {
     border: 0px;
 }
 
-.navbar-toggle:hover {
-    background: transparent!important;
+button:focus {
+    border: 1px dashed;
+    background-color: rgba(0, 0, 0, .08);
 }
 
 .navbar-toggle .icon-bar {
@@ -574,6 +586,7 @@ a[data-lightbox]:hover img {
 #lightbox-modal .modal-dialog img {
     max-height: 90vh;
     margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 .lightbox-caption {
@@ -593,7 +606,7 @@ a[data-lightbox]:hover img {
     top: 20px;
     right: 20px;
     z-index: 20;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .7);
     border: none;
     line-height: 30px;
     padding: 0 9px 5px;
@@ -611,7 +624,7 @@ a[data-lightbox]:hover img {
 .prev-lightbox {
     font-size: 20px;
     color: rgba(255, 255, 255, .9);
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .7);
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
@@ -637,6 +650,11 @@ a[data-lightbox]:hover img {
     padding: 0;
     color: rgba(0, 0, 0, .5);
     background: none;
+}
+
+h2 {
+    width: 95%;
+    margin: auto;
 }
 
 h1,
@@ -677,7 +695,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -739,6 +757,10 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.black {
+    color: #111!important;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -753,7 +775,8 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(34, 34, 34, 0.7);
+    /*background-color: rgba(165, 147, 99, 0.7);*/
     padding: 40px 40px 40px 40px;
 }
 
@@ -783,7 +806,17 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.btn-atomic-tangerine:hover {
+.btn-atomic-tangerine-black {
+    background: #F3976C;
+    color: #111!important;
+}
+
+.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine-black:hover, .btn-atomic-tangerine-black:focus {
     background: #c27956!important;
     color: #FFFFFF!important;
 }
@@ -810,19 +843,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -848,13 +881,13 @@ h4 {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -873,8 +906,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -884,8 +917,8 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -931,7 +964,7 @@ h4 {
         padding-left: 15px;
         width: 100%;
     }
-    .nav > li:hover {
+    .nav > li:focus {
         background: rgba(0, 0, 0, .08);
     }
     .dropdown .dropdown a .caret {
